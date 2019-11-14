@@ -1,0 +1,12 @@
+{
+	"name": "Light Wall",
+	"description": "A wall made of light. cheap and strong but an endgame item",
+	"type": "Wall",
+	"health": 4000,
+	"size": 2,
+	"requirements": [
+		{ "item": "lightcube", "amount": 20 }
+	],
+	"category": "defense",
+	"research": "surgeWallLarge"
+}
