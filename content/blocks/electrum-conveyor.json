@@ -3,12 +3,11 @@
 	"name": "Electrum conveyor",
 	"description": "Example conveyor.",
 	"requirements": [
-		{"item": "titanium", "amount": 3},
 		{"item": "copper", "amount": 3},
 		{"item": "lead", "amount": 3},
-		{"item": "electrum", "amount": 3}
+		{"item": "lightcube", "amount": 5}
 	],
 	"category": "distribution",
-	"speed": 0.12,
+	"speed": 1.0,
 	"research": "titanium-conveyor"
 }
