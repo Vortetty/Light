@@ -1,7 +1,7 @@
 {
 	"type": "Conveyor",
-	"name": "Electrum conveyor",
-	"description": "Example conveyor.",
+	"name": "Uses light to push items",
+	"description": "lightspeed conveyor",
 	"requirements": [
 		{"item": "copper", "amount": 3},
 		{"item": "lead", "amount": 3},
@@ -9,5 +9,5 @@
 	],
 	"category": "distribution",
 	"speed": 1.0,
-	"research": "titanium-conveyor"
+	"research": "lightpackager"
 }
