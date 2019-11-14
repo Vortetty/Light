@@ -1,7 +1,7 @@
 {
 	"type": "GenericCrafter",
 	"name": "Light Packager",
-	"description": "Creates Liquid Light for further processing",
+	"description": "Creates Light for further processing, transferred as liquid",
 	"liquidCapacity": 50,
 	"outputLiquid": {"liquid": "light", "amount": 5},
 	"size": 1,
