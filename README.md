@@ -1,5 +1,5 @@
-# ExampleMod
-An example of a simple mod for Mindustry.
+# Mindustryalization
+A mod about making everything for speed and efficiency
 
 ## Importing
 
