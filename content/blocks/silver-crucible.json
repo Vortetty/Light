@@ -1,25 +1,27 @@
 {
-	"type": "GenericCrafter",
-	"name": "Silver Crucible",
-	"description": "Melts silver down for use in crafting.",
-	"liquidCapacity": 50,
-	"outputLiquid": {"liquid": "molten-silver", "amount": 7.0},
+	"type": "GenericSmelter",
+	"name": "Light Packager",
+	"description": "Packages light from pipes for processing or storage in the core",
+	"liquidCapacity": 100,
+	"outputItem": {"item": "lightcube", "amount": 2},
 	"size": 2,
 	"hasPower": true,
 	"hasLiquids": true,
-	"craftTime": 10,
+	"hasItems": true,
+	"craftTime": 50,
 	"updateEffect": "smeltsmoke",
 	"consumes": {
-		"power": 0.6,
-		"item": "silver"
+		"power": 0.5,
+		"liquid": {
+			"liquid": "light",
+			"amount": 1.0
+		}
 	},
 	"requirements": [
 		{ "item": "lead", "amount": 50 },
-		{ "item": "copper", "amount": 80 },
-		{ "item": "silicon", "amount": 20 }
+		{ "item": "copper", "amount": 50 }
+		
 	],
 	"category": "crafting",
-	"research": "kiln",
-	"idleSound": "respawning",
-	"idleSoundVolume": 0.5
+	"research": "lightextractor"
 }
