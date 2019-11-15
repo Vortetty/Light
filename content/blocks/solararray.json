@@ -1,0 +1,25 @@
+{
+	"type": "SingleTypeGenerator",
+	"name": "Solar Array",
+	"description": "A solar array taking in Packaged Light to unpackage it and generate power",
+	"size": 3,
+	"hasPower": true,
+	"hasItems": true,
+	"itemDuration": 60,
+	"powerProduction": 10,
+	"consumes": {
+		"items": {
+			"items": [
+				{ "item": "lightcube", "amount": 1 }
+			],
+			"optional": true
+		}
+	},
+	"requirements": [
+		{ "item": "copper", "amount": 80 },
+		{ "item": "lead", "amount": 60 },
+		{ "item": "sand", "amount": 50 }
+	],
+	"category": "power",
+	"research": "silver-crucible"
+}
