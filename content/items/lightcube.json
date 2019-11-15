@@ -1,0 +1,6 @@
+{
+	"type": "material",
+	"name": "Light Cube",
+	"description": "A cube containing light. Good for building because of how packed the light is.",
+	"color": "#ffffff"
+}
