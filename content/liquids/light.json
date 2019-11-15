@@ -1,0 +1,7 @@
+{
+	"name": "Light",
+	"description": "Light transmitted as liquid",
+	"temperature": 0,
+    "viscosity": 0,
+    "color": "aeffff"
+}
