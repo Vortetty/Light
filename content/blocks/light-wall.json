@@ -8,5 +8,5 @@
 		{ "item": "lightcube", "amount": 20 }
 	],
 	"category": "defense",
-	"research": "surgeWallLarge"
+	"research": "lightpackager"
 }
