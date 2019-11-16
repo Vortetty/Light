@@ -6,8 +6,8 @@
 	"tier": 5,
 	"drillTime": 50,
 	"consumes": {
-		"liquid": {
-			"liquid": "light", 
+		"item": {
+			"item": "lightcube", 
 			"amount": 0.1,
 			"booster": true
 		}
