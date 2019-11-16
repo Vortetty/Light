@@ -1,6 +1,6 @@
 {
 	"type": "Conveyor",
-	"name": "Uses light to push items",
+	"name": "Light Conveyor",
 	"description": "lightspeed conveyor",
 	"requirements": [
 		{"item": "copper", "amount": 3},
