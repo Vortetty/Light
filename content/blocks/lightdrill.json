@@ -6,11 +6,6 @@
 	"tier": 5,
 	"drillTime": 50,
 	"consumes": {
-		"item": {
-			"item": "lightcube", 
-			"amount": 0.1,
-			"booster": true
-		}
 	},
 	"requirements": [
 		{ "item": "light", "amount": 80 },
