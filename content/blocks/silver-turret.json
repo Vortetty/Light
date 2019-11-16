@@ -1,23 +1,23 @@
 {
 	"type": "DoubleTurret",
-	"name": "Silver Turret",
-	"description": "Sprays useless silver bullets everywhere. What a mess.",
-	"health": 200,
+	"name": "Light Bombardier",
+	"description": "Bombards everything with photons similar to your phone screen.",
+	"health": 2000,
 	"size": 1,
-	"reload": 4,
-	"range": 100,
+	"reload": 0,
+	"range": 1000,
 	"ammoUseEffect": "shellEjectSmall",
-	"inaccuracy": 30,
-	"rotatespeed": 12,
+	"inaccuracy": 0,
+	"rotatespeed": 20,
 	"ammo": {
-		"silver": {
-			"speed": 3.0,
-			"damage": 3,
-			"bulletWidth": 7,
-			"bulletHeight": 9,
+		"lightcube": {
+			"speed": 5.0,
+			"damage": 25,
+			"bulletWidth": 5,
+			"bulletHeight": 10,
 			"shootEffect": "shootSmall",
 			"smokeEffect": "shootSmallSmoke",
-			"ammoMultiplier": 5
+			"ammoMultiplier": 10
 		}
 	},
 	"requirements": [
