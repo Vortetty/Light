@@ -6,9 +6,14 @@
 	"tier": 5,
 	"drillTime": 50,
 	"consumes": {
-	},
+            "liquid": {
+			"liquid": "light", 
+			"amount": 0.1,
+			"booster": true
+		}
+	    },
 	"requirements": [
-		{ "item": "light", "amount": 80 },
+		{ "item": "lightcube", "amount": 80 },
 		{ "item": "silicon", "amount": 40 },
 		{ "item": "graphite", "amount": 20 }
 	],
