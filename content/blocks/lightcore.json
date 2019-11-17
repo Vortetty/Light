@@ -1,15 +1,15 @@
 {
 	"name": "Light Core",
 	"description": "A core made of light.",
-	"type": "Vault",
-	"itemCapacity": 2500,
+	"type": "CoreBlock",
+	"itemCapacity": 1000000,
 	"hasItems": true,
 	"health": 2000,
-	"size": 3,
+	"size": 5,
 	"requirements": [
-		{ "item": "electrum", "amount": 20 },
+		{ "item": "light", "amount": 20 },
 		{ "item": "titanium", "amount": 60 },
 		{ "item": "thorium", "amount": 40 }
 	],
-	"category": "effect",
-	"research": "vault"
+	"category": "effect"
+}
