@@ -9,6 +9,6 @@
 	"requirements": [
 		{ "item": "lightcube", "amount": 100 }
 	],
-	"category": "effect"
+	"category": "effect",
   "research": "lightpackager"
 }
