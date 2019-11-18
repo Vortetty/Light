@@ -1,0 +1,14 @@
+{
+	"name": "Light Core",
+	"description": "A core made of light. [red]!!! THIS CANT BE DELETED BECAUSE IT IS A CORE BLOCK, USE WISELY !!! []",
+	"type": "CoreBlock",
+	"itemCapacity": 1000000,
+	"hasItems": true,
+	"health": 20000,
+	"size": 1,
+	"requirements": [
+		{ "item": "lightcube", "amount": 100 }
+	],
+	"category": "effect"
+  "research": "lightpackager"
+}
