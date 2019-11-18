@@ -4,12 +4,11 @@
 	"type": "CoreBlock",
 	"itemCapacity": 1000000,
 	"hasItems": true,
-	"health": 2000,
+	"health": 50000,
 	"size": 5,
 	"requirements": [
-		{ "item": "light", "amount": 20 },
-		{ "item": "titanium", "amount": 60 },
-		{ "item": "thorium", "amount": 40 }
+		{ "item": "lightcube", "amount": 20 },
+		{ "item": "copper", "amount": 20 }
 	],
 	"category": "effect"
 }

@@ -1,0 +1,15 @@
+{
+  "name": "Small Light Wall",
+  "description": "A wall made of light. cheap and strong",
+  "type": "Wall",
+  "health": 1000,
+  "size": 1,
+  "requirements": [
+    {
+      "item": "lightcube",
+      "amount": 20
+    }
+  ],
+  "category": "defense",
+  "research": "lightpackager"
+}
