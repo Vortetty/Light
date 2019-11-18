@@ -1,15 +1,15 @@
 {
 	"name": "Light Driver",
-	"description": "Copy of teleporter from Mindustry Classic",
+	"description": "Uses light to shove items everywhere.",
 	"type": "MassDriver",
 	"health": 2000,
 	"knockback": 0,
 	"rotateSpeed": 1000.0,
 	"hasPower": true
 	"minDistribute": 1,
-	"reloadTime": 0,
+	"reloadTime": 1,
 	"range": 5000
-	"itemCapacity": 100,
+	"itemCapacity": 1000,
 	"translation": 1,
 	"shootEffect": "none"
 	"smokeEffect": "none"
