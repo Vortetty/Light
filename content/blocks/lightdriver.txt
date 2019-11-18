@@ -1,0 +1,28 @@
+{
+	"name": "Light Driver",
+	"description": "Copy of teleporter from Mindustry Classic",
+	"type": "MassDriver",
+	"health": 2000,
+	"knockback": 0,
+	"rotateSpeed": 1000.0,
+	"hasPower": true
+	"minDistribute": 1,
+	"reloadTime": 0,
+	"range": 5000
+	"itemCapacity": 100,
+	"translation": 1,
+	"shootEffect": "none"
+	"smokeEffect": "none"
+	"recieveEffect": "none"
+	"shake": 0,
+	"consumes": {
+		"power": 0.1
+	},
+	"size": 1,
+	"requirements": [
+		{ "item": "lightcube", "amount": 50 },
+		{ "item": "graphite", "amount": 20 }
+	],
+	"category": "distribution"
+	"research": "lightconveyor"
+}
