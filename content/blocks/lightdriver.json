@@ -24,5 +24,5 @@
 		{ "item": "graphite", "amount": 20 }
 	],
 	"category": "distribution",
-	"research": "lightconveyor"
+	"research": "light-conveyor"
 }
