@@ -1,0 +1,29 @@
+{
+    "type": "mech",
+    "name": "Eradicator"
+    "description": "A massive ship pad so you can fight bosses, as if you were the boss",
+    "speed": 0.5,
+    "flying":true,
+    "drag": 0.09,
+    "hitsize": 20,
+    "health": 10000,
+    "itemCapacity": 500,
+    "buildpower": 1f,
+    "cellTrnsY": 1f,
+    "engineColor": "#00ffff",
+    "weaponOffsetY": -1,
+    "weaponOffsetx": -1,
+    "weapon":{
+        "name": "eradication",
+        "length":13.0,
+        "reload":10.0,
+        "shots":2,
+        "recoil":3,
+        "spacing": 0,
+        "inaccuracy": 0,
+        "alternate": true,
+        "ejectEffect": "Fx.shellEjectMedium",
+        "bullet": "Bullets.missileSwarm",
+        "shootSound": "Sounds.shootBig"
+    }
+}
