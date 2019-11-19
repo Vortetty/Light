@@ -1,0 +1,27 @@
+{
+    "type": "MechPad",
+    "mech": "eradicator",
+    "name": "Eradicator Fighter Ship Pad",
+    "description": "Transform into a heavy death delivery device",
+    "size": 3,
+    "produceTime": 1500,
+    "itemCapacity": 90,
+    "requirements": [
+        { "item": "copper", "amount": 700},
+        { "item": "thorium", "amount": 2000},
+        { "item": "silicon", "amount": 1500},
+        { "item": "surge-alloy", "amount": 900}
+    ],
+    "consumes": {
+         "power": 3.0,
+         "items": {
+              "items": [
+                   {"item":"silicon", "amount":45},
+                   {"item":"titanium", "amount":30}
+              ],
+              "optional": false
+         }
+    },
+    "category": "upgrade",
+    "research": "glaive-ship-pad"
+}
