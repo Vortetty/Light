@@ -1,6 +1,6 @@
 {
     "type": "mech",
-    "name": "Eradicator"
+    "name": "Eradicator",
     "description": "A massive ship pad so you can fight bosses, as if you were the boss",
     "speed": 0.5,
     "flying":true,
@@ -22,8 +22,8 @@
         "spacing": 0,
         "inaccuracy": 0,
         "alternate": true,
-        "ejectEffect": "Fx.shellEjectMedium",
-        "bullet": "Bullets.missileSwarm",
-        "shootSound": "Sounds.shootBig"
+        "ejectEffect": "shellEjectMedium",
+        "bullet": "missileSwarm",
+        "shootSound": "shootBig"
     }
 }
