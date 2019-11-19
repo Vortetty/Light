@@ -1,0 +1,21 @@
+{
+	"type": "GenericCrafter",
+	"name": "Silicon Filter",
+	"description": "Pulls Silicon particulate out of the air and melts them back into Silicon.",
+	"liquidCapacity": 50,
+	"outputItem": {"item": "silicon", "amount": 1},
+	"size": 2,
+	"hasPower": true,
+	"hasLiquids": true,
+	"craftTime": 30,
+	"updateEffect": "smeltsmoke",
+	"consumes": {
+		"power": 0.5
+	},
+	"requirements": [
+		{ "item": "lead", "amount": 80 },
+		{ "item": "copper", "amount": 80 }
+	],
+	"category": "crafting",
+	"research": "lightpackager"
+}
