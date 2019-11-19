@@ -1,0 +1,22 @@
+{
+	"type": "MendProjector",
+	"name": "Light Mender",
+	"description": "Uses concetrated light to melt things back together, effectively repaiting them.",
+	"size": 1,
+	"reload": 25,
+	"range": 150,
+	"healPercent": 10,
+	"phaseBoost": 10,
+  "health": 1000,
+	"consumes": {
+		"power": 0.5
+	},
+	"requirements": [
+		{ "item": "lead", "amount": 25 },
+		{ "item": "copper", "amount": 25 },
+    { "item": "lightcube", "amount": 25 },
+		{ "item": "silicon", "amount": 25 }
+	],
+	"category": "effect",
+	"research": "lightextractor"
+}
