@@ -5,5 +5,5 @@ A mod about making everything for speed and efficiency
 - [ ] add phase fabric extractor
 - [ ] add silicon extractor
 
-## Suggestions
-feel free to open an issue for a suggestion
+## Suggestions?
+[![Feature Requests](https://feathub.com/Vortetty/Mindustryalization?format=svg)](https://feathub.com/Vortetty/Mindustryalization)
