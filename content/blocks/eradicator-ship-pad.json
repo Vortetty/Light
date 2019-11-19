@@ -4,23 +4,12 @@
     "name": "Eradicator Fighter Ship Pad",
     "description": "Transform into a heavy death delivery device",
     "size": 3,
-    "produceTime": 1500,
-    "itemCapacity": 90,
+    "produceTime": 500,
     "requirements": [
-        { "item": "copper", "amount": 700},
-        { "item": "thorium", "amount": 2000},
-        { "item": "silicon", "amount": 1500},
-        { "item": "surge-alloy", "amount": 900}
+        { "item": "lightcube" }
     ],
     "consumes": {
-         "power": 3.0,
-         "items": {
-              "items": [
-                   {"item":"silicon", "amount":45},
-                   {"item":"titanium", "amount":30}
-              ],
-              "optional": false
-         }
+         "power": 5.0,
     },
     "category": "upgrade",
     "research": "glaive-ship-pad"
