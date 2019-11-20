@@ -1,3 +1,5 @@
+# Mindustryalization
+A mod about making everything for speed and efficiency
 
 <style>
   hr {
@@ -6,9 +8,6 @@
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
   }
 </style>
-
-# Mindustryalization
-A mod about making everything for speed and efficiency
 
 ## To Do
 
