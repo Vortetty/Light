@@ -17,5 +17,5 @@
 		{ "item": "copper", "amount": 80 }
 	],
 	"category": "crafting",
-	"research": "lightpackager"
+	"research": "sandextractor"
 }
