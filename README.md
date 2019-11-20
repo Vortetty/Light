@@ -20,6 +20,7 @@ current requests are below, if none are visible, there are most likely none.
 [![Feature Requests](https://feathub.com/Vortetty/Mindustryalization?format=svg)](https://feathub.com/Vortetty/Mindustryalization)
 
 <script type='text/javascript'>
+  
   function disableClick(input){
     input.checked == true ? input.checked = false : input.checked = true;
   }
@@ -29,6 +30,7 @@ current requests are below, if none are visible, there are most likely none.
     document.querySelectorAll('input[disabled]').disabled = false;
     document.querySelectorAll('input').onclick = 'disableClick(this);';
   }
+  
 </script>
 
 <tag onload="load"></tag>
