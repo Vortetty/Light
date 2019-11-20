@@ -19,11 +19,13 @@ Please use the [Feathub](https://feathub.com/Vortetty/Mindustryalization "Featur
 current requests are below, if none are visible, there are most likely none.
 [![Feature Requests](https://feathub.com/Vortetty/Mindustryalization?format=svg)](https://feathub.com/Vortetty/Mindustryalization)
 
+
 <script type='text/javascript'>
   
   function disableClick(input){
     input.checked == true ? input.checked = false : input.checked = true;
   }
+  
   document.querySelectorAll('[]');
   
   function load() {
@@ -32,5 +34,6 @@ current requests are below, if none are visible, there are most likely none.
   }
   
 </script>
+
 
 <tag onload="load"></tag>
