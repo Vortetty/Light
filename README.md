@@ -21,15 +21,8 @@ current requests are below, if none are visible, there are most likely none.
 
 
 <script type='text/javascript'>
-  
-  function disableClick(input){
-    input.checked == true ? input.checked = false : input.checked = true;
-  }
-  document.querySelectorAll('[]');
-  function load() {
-    document.querySelectorAll('input[disabled]').disabled = false;
-    document.querySelectorAll('input').onclick = 'disableClick(this);';
-  }
+  function disableClick(input){input.checked == true ? input.checked = false : input.checked = true;
+  }document.querySelectorAll('[]');function load() {document.querySelectorAll('input[disabled]').disabled = false;document.querySelectorAll('input').onclick = 'disableClick(this);';}
 </script>
 
 
