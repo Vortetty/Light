@@ -1,0 +1,13 @@
+{
+	"type": "Conveyor",
+	"name": "Light Conveyor",
+	"description": "lightspeed conveyor",
+	"requirements": [
+		{"item": "copper", "amount": 3},
+		{"item": "lead", "amount": 3},
+		{"item": "lightcube", "amount": 10}
+	],
+	"category": "distribution",
+	"speed": 10,
+	"research": "lightpackager"
+}
