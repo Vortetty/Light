@@ -3,25 +3,13 @@ A mod about making everything for speed and efficiency
 
 ## To Do
 
-<ul class="contains-task-list">
-    <li class="task-list-item">
-        <input type="checkbox" id="" disabled="false" class="task-list-item-checkbox"> add custom repair drones
-    </li>
-</ul>
+- [ ] add custom repair drones
 
 <details><summary>Completed Tasks</summary>
   
-  <ul class="contains-task-list">
-    <li class="task-list-item">
-        <input type="checkbox" id="" disabled="false" class="task-list-item-checkbox"> add phase fabric extractor
-    </li>
-    <li class="task-list-item">
-        <input type="checkbox" id="" disabled="false" class="task-list-item-checkbox"> add silicon extractor
-    </li>
-    <li class="task-list-item">
-        <input type="checkbox" id="" disabled="false" class="task-list-item-checkbox"> add light launcher
-    </li>
-  </ul>
+  - [x] add phase fabric extractor
+  - [x] add silicon extractor
+  - [x] add light launcher
   
 </details>
 
