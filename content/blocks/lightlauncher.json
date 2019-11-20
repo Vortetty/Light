@@ -1,0 +1,21 @@
+{
+  "name": "Light Launcher",
+  "description": "Launches items to your ship with light.",
+  "type": "LaunchPad",
+  "health": 100000,
+  "itemCapacity": 10,
+  "launchTime": 0,
+  "hasPower": true,
+  "size": 2,
+  "consumes": {
+      "power": 0.5,
+  },
+  "requirements": [
+    {
+      "item": "lightcube",
+      "amount": 100
+    }
+  ],
+  "category": "effect",
+  "research": "lightpackager"
+}
