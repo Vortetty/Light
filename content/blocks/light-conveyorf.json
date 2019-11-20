@@ -1,7 +1,7 @@
 {
 	"type": "Conveyor",
-	"name": "Light Conveyor",
-	"description": "lightspeed conveyor",
+	"name": "NOOM NOOM",
+	"description": "lightspeed conveyor but faster",
 	"requirements": [
 		{"item": "copper", "amount": 3},
 		{"item": "lead", "amount": 3},
