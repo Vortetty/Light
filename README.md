@@ -1,3 +1,11 @@
+<style>
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+</style>
+
 # Mindustryalization
 A mod about making everything for speed and efficiency
 
@@ -19,10 +27,3 @@ Please use the [Feathub](https://feathub.com/Vortetty/Mindustryalization "Featur
 current requests are below, if none are visible, there are most likely none.
 [![Feature Requests](https://feathub.com/Vortetty/Mindustryalization?format=svg)](https://feathub.com/Vortetty/Mindustryalization)
 
-<style>
-  hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  }
-</style>
