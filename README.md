@@ -3,8 +3,10 @@ A mod about making everything for speed and efficiency
 
 ## To Do
 <details><summary>Completed Tasks</summary>
+  
 - [x] add phase fabric extractor
 - [x] add silicon extractor
+
 </details>
 
 ## Suggestions?
