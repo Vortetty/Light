@@ -3,7 +3,7 @@
 	"name": "Phase Re-Weaver",
 	"description": "Pulls Phase fibers out of the air, spins them into thread, then weaves them into fabric.",
 	"liquidCapacity": 50,
-	"outputItem": {"item": "phasefabric", "amount": 1},
+	"outputItem": {"item": "phase-fabric", "amount": 1},
 	"size": 2,
 	"hasPower": true,
 	"hasLiquids": true,
