@@ -3,9 +3,7 @@
 	"description": "An open, mineral rich cavern with veins of solid light shining through.",
 	"loadout": "basicFoundation",
     "startingItems": [
-    	{"item": "copper", "amount": 500},
-    	{"item": "lead", "amount": 500},
-        {"item": "graphite", "amount": 250}
+    	{"item": "copper", "amount": 500}
     ],
     "conditionWave": 10,
     "launchPeriod": 10,
