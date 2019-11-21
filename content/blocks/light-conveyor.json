@@ -8,6 +8,6 @@
 		{"item": "lightcube", "amount": 5}
 	],
 	"category": "distribution",
-	"speed": 0.75,
+	"speed": 1,
 	"research": "lightpackager"
 }
