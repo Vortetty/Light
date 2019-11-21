@@ -13,17 +13,12 @@
     	{
     		"type": "ZoneWave",
     		"zone": "groundZero", 
-    		"wave": 10
+    		"wave": 1
     	},
-        {
-            "type": "ZoneWave",
-            "zone": "stainedMountains",
-            "wave": 10
-        },
     	{
     		"type": "Unlock",
     		"block": "kiln"
-    	}
+    	},
     	{
     		"type": "Unlock",
     		"block": "pneumatic-drill"
