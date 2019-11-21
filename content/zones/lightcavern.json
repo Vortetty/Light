@@ -15,14 +15,6 @@
     		"zone": "groundZero", 
     		"wave": 1
     	},
-    	{
-    		"type": "Unlock",
-    		"block": "kiln"
-    	},
-    	{
-    		"type": "Unlock",
-    		"block": "pneumatic-drill"
-    	}
     ],
     "resources": ["copper", "lightcube", "lead", "coal", "sand","thorium","titanium"]
 }
