@@ -1,14 +1,6 @@
 # Mindustryalization
 A mod about making everything for speed and efficiency
 
-<style>
-  hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  }
-</style>
-
 ## To Do
 
 - [ ] add custom repair drones
