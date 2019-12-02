@@ -13,17 +13,22 @@
     </head>
     <body>
         
-        <script>
-            // Add slideDown animation to Bootstrap dropdown when expanding.
-            $('.dropdown').on('show.bs.dropdown', function() {
-                $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-            });
-
-            // Add slideUp animation to Bootstrap dropdown when collapsing.
-            $('.dropdown').on('hide.bs.dropdown', function() {
-                $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-            });
-        </script>
+        <style>
+            .dropdown {
+                .dropdown-menu {
+                    transition: all 0.5s;
+                    overflow: hidden;
+                    transform-origin: top center;
+                    transform: scale(1,0);
+                    display: block;
+                }
+                &:hover {
+                    .dropdown-menu {
+                        transform: scale(1);
+                    }
+                }
+            }
+        </style>
         
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <a href="https://github.com/Vortetty/Mindustryalization/edit/master/docs/template.html" class="navbar-brand">Mindustryalization Wiki</a>
