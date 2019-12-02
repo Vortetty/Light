@@ -21,6 +21,19 @@
             .dropdown:hover .dropdown-menu {
                 transform: scale(1);
             }
+            
+            /* Center align the text within the three columns below the carousel */
+            .content .col-lg-4 {
+                margin-bottom: 1.5rem;
+                text-align: center;
+            }
+            .content h2 {
+                font-weight: 400;
+            }
+            .content .col-lg-4 p {
+                margin-right: .75rem;
+                margin-left: .75rem;
+            }
         </style>
     </head>
     <body>
@@ -55,13 +68,44 @@
         </nav>
             
         <!-- main page -->
-        <div id="loading">
-            <img id="loading-image" src="images/ajax-loader.gif" alt="Loading..." />
+        <div class="blocks" style="display: none;">
+            <div class="container content">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img class="rounded-circle" src="IMAGE URL" alt="WHAT IS THE IMAGE OF" width="140" height="140">
+                        <h2>NAME OF THING</h2>
+                        <p>DESCRIPTION OF THING</p>
+                        <p>
+                            <a class="btn btn-secondary" href="#" role="button">Details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <!-- scripts -->
         <script>
-           
+            // Get query parameter
+            // Source: https://css-tricks.com/snippets/javascript/get-url-variables/
+            function getQueryParameter(variable) {
+                var query = window.location.search.substring(1);
+                var vars = query.split("&");
+                for (var i = 0; i < vars.length; i++) {
+                    var pair = vars[i].split("=");
+                    if (pair[0] == variable) {
+                        return pair[1];
+                    }
+                }
+                return (false);
+            }
+
+            // Capture the `content` query parameter from the URL.
+            var content = getQueryParameter('content')
+            if(content.toLowerCase() === 'blocks') {
+                $('.blocks').show();
+            } else if(content.toLowerCase() === 'itemsliquids') {
+                $('.itemsliquids').show();
+            }
         </script>
             
         <!-- Optional JavaScript -->
