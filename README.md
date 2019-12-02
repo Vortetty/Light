@@ -3,7 +3,7 @@ A mod about making everything for speed and efficiency
 
 ## Wiki
 
-Currently a WIP. Located at [https://Vortetty.github.io/mindustryalization/wiki/#!home.html](https://Vortetty.github.io/mindustryalization/wiki/#!home.html)
+Currently a WIP. no active link yet.
 
 ## To Do
 
