@@ -7,10 +7,9 @@ Currently a WIP. Located at [https://Vortetty.github.io/mindustryalization/wiki/
 
 ## To Do
 
-- [ ] add custom repair drones
-
 <details><summary>Completed Tasks</summary>
   
+  - [ ] ~~add custom repair drones~~
   - [x] add phase fabric extractor
   - [x] add silicon extractor
   - [x] add light launcher
