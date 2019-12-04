@@ -141,7 +141,7 @@
             //make it so i can put scripts before jquery, then run them
             var t = null;
             function jquery_ready() {
-                if (window.jQuery && window.jQuery.ui) {
+                if (window.jQuery) {
                     console.log("showing")
                     showstuff(window.jQuery);
                 } else {
