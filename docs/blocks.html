@@ -90,7 +90,14 @@
             
         <!-- main page -->
         <div class="container content">
-            
+            <img src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/lightwall.png">
+            <ul class="list-group">
+                <li class="list-group-item lightwall"><a href="?content=lightwall">Light Wall</a></li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
         </div>
         <!-- scripts -->
         <script>
@@ -111,7 +118,10 @@
             // Capture the `content` query parameter from the URL.
             var content = getQueryParameter('content');
             var shown = "."+content;
-            var active = ".active_"+content;
+            var active = ".li_"+content;
+            
+            $(shown).show()
+            $(active).toggleClass("active")
             
             console.log(shown + " " + active)
         </script>
