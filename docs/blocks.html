@@ -107,27 +107,41 @@
         <script>
             // Get query parameter
             // Source: https://css-tricks.com/snippets/javascript/get-url-variables/
-            function getQueryParameter(variable) {
-                var query = window.location.search.substring(1);
-                var vars = query.split("&");
-                for (var i = 0; i < vars.length; i++) {
-                    var pair = vars[i].split("=");
-                    if (pair[0] == variable) {
-                        return pair[1];
+            function showstuff($) {
+                function getQueryParameter(variable) {
+                    var query = window.location.search.substring(1);
+                    var vars = query.split("&");
+                    for (var i = 0; i < vars.length; i++) {
+                        var pair = vars[i].split("=");
+                        if (pair[0] == variable) {
+                            return pair[1];
+                        }
                     }
+                    return (false);
                 }
-                return (false);
-            }
 
-            // Capture the `content` query parameter from the URL.
-            var content = getQueryParameter('content');
-            var shown = "."+content;
-            var active = ".li_"+content;
+                // Capture the `content` query parameter from the URL.
+                var content = getQueryParameter('content');
+                var shown = "."+content;
+                var active = ".li_"+content;
             
-            $(shown).show()
-            $(active).toggleClass("active")
+                $(shown).show()
+                $(active).toggleClass("active")
             
-            console.log(shown + " " + active)
+                console.log(shown + " " + active)
+            }
+            
+            //make it so i can put scripts before jquery, then run them
+            var t = null;
+            function jquery_ready() {
+                if (window.jQuery && window.jQuery.ui) {
+                    showstuff(window.jQuery);
+                } else {
+                    t = window.setTimeout(jquery_ready, 100);
+                }
+            }
+            t = window.setTimeout(jquery_ready, 100);
+            
         </script>
             
         <!-- Optional JavaScript -->
