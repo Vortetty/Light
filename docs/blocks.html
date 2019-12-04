@@ -93,14 +93,52 @@
             
         <!-- main page -->
         <div class="container content">
-            <img style="display:none;" class="lightwall" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/lightwall.png">
-            <img style="display:none;" class="smlightwall" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/lightwallsm.png">
+            <div class="row">
+                    <div class="col-lg-4 lightwall">
+                        <img class="rounded-circle" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/lightwall.png" alt="Blocks.png" width="140" height="140">
+                        <h2>Light Wall</h2>
+                        <p>All of the blocks in the mod. Includes tiles, ores, and all machines.</p>
+                        <p>
+                            <a class="btn btn-secondary" href="blocks.html" role="button">Details</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="rounded-circle lightwallsm" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/items/lightcube.png" alt="itemsliquids.png" width="140" height="140">
+                        <h2>Items and Liquids</h2>
+                        <p>All of the items and liquids in the mod.</p>
+                        <p>
+                            <a class="btn btn-secondary" href="itemsliquids.html" role="button">Details</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="rounded-circle" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/mechs/eradicator.png" alt="mechs.png" width="140" height="140">
+                        <h2>Mechs</h2>
+                        <p>All of the mechs in the mod.</p>
+                        <p>
+                            <a class="btn btn-secondary" href="mechs.html" role="button">Details</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="rounded-circle" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/zones/lightcavern.png" alt="zones.png" width="140" height="140">
+                        <h2>zones</h2>
+                        <p>All of the zones in the mod.</p>
+                        <p>
+                            <a class="btn btn-secondary" href="zones.html" role="button">Details</a>
+                        </p>
+                    </div>
+            </div>
             <ul class="list-group">
-                <a href="?content=lightwall"><li class="list-group-item li_lightwall">Light Wall</li></a>
-                <a href="?content=smlightwall"><li class="list-group-item li_smlightwall">Small Light Wall</li></a>
-                <li class="list-group-item">Morbi leo risus</li>
-                <li class="list-group-item">Porta ac consectetur ac</li>
-                <li class="list-group-item">Vestibulum at eros</li>
+                <li onclick="window.location = "?content=lightextractor";" class="list-group-item li_lightwall">Light Extractor
+                    <ul class="list-group">
+                        <li onclick="window.location = "?content=lightpackager";" class="list-group-item li_lightwall">Light Packager
+                            <ul class="list-group">
+                                <li onclick="window.location = "?content=lightwallsm";" class="list-group-item li_lightwall">Small Light Wall</li>
+                                <li onclick="window.location = "?content=sandextractor";" class="list-group-item li_lightwall">Sand Extractor</li>
+                                <li onclick="window.location = "?content=lightlauncher";" class="list-group-item li_lightwall">Light Launcher</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <!-- scripts -->
