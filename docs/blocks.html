@@ -49,6 +49,49 @@
             .content {
                 margin-top: calc( 40px + 2rem);
             }
+            
+            
+            .list-group-rounding{
+                border-radius:1%;
+            }
+            
+            .just-padding {
+  	            padding: 10px;
+            }
+
+            .list-group.list-group-root {
+                padding: 0;
+                overflow: hidden;
+            }
+
+            .list-group.list-group-root .list-group {
+                margin-bottom: 0;
+            }
+
+            .list-group.list-group-root .list-group-item {
+                border-radius: 0;
+                border-width: 1px 0 0 0;
+            }
+
+            .list-group.list-group-root > .list-group-item:first-child {
+                border-top-width: 0;
+            }
+
+            .list-group.list-group-root > .list-group > .list-group-item {
+                padding-left: 30px;
+            }
+
+            .list-group.list-group-root > .list-group > .list-group > .list-group-item {
+                padding-left: 50px;
+            }
+            
+            .list-group.list-group-root > .list-group > .list-group > .list-group > .list-group-item {
+                padding-left: 70px;
+            }
+            
+            .list-group.list-group-root > .list-group > .list-group > .list-group > .list-group > .list-group-item {
+                padding-left: 90px;
+            }
         </style>
     </head>
     <body>
@@ -116,8 +159,38 @@
                         </p>
                     </div>
             </div>
+            <div class="list-group-rounderl">
+            <div class="list-group list-group-root well">
+  
+                <a href="?content=lightextractor" class="list-group-item li_ lightextractor">Light Extractor</a>
+                <div class="list-group">
+    
+                    <a href="?content=lightpackager" class="list-group-item li_lightPackager">Light Packager</a>
+                    <div class="list-group">
+                        <a href="?content=lightwallsm" class="list-group-item">Small Light Wall</a>
+                        <div class="list-group">
+                            <a href="?content=lightwall" class="list-group-item">Light Wall</a>
+                            <div class="list-group">
+                                <a href="?content=lightmender" class="list-group-item">Light Mender</a>
+                                <a href="?content=lightbombardier" class="list-group-item">Light Bombardier</a>
+                            </div>
+                        </div>
+                        
+                        <a href="?content=sandextractor" class="list-group-item">Sand Extractor</a>
+                        <div class="list-group">
+                            <a href="?content=siliconfilter" class="list-group-item">Silicon Filter</a>
+                            <a href="?content=phasereweaver" class="list-group-item">Phase Re-Weaver</a>
+                        </div>
+                        
+                        <a href="?content=solararray" class="list-group-item">Solar Array</a>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+            
             <ul class="list-group">
-                <li onclick="window.location = '?content=lightextractor';" class="list-group-item li_lightwall">Light Extractor
+                <li onclick="window.location = '?content=lightextractor';" class="list-group-item ?content=lightextractor">Light Extractor
                     <ul class="list-group">
                         <li onclick="window.location = '?content=lightpackager';" class="list-group-item li_lightwall">Light Packager
                             <ul class="list-group">
