@@ -3,7 +3,8 @@ A mod about making everything for speed and efficiency
 
 ## Wiki
 
-Currently a WIP. no active link yet.
+Currently a WIP.
+[link](https://vortetty.github.io/Mindustryalization/)
 
 ## To Do
 
