@@ -57,6 +57,10 @@
                 border-radius:0.5rem;
                 margin-bottom: 2rem;
             }
+
+            .round-corners {
+            	border-radius:0.5rem;
+            }
             
             .just-padding {
   	            padding: 10px;
@@ -134,7 +138,7 @@
         <div class="container content">
             <div class="row">
                 <div class="col-lg-4 lightextractor" style="display:none;">
-                    <img class="rounded-circle" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/lightextractor.png" alt="Blocks.png" width="128" height="128">
+                    <img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/lightextractor.png" alt="Blocks.png" width="128" height="128">
                     <h2>Light Wall</h2>
                     <p>Creates Light for further processing, transferred as liquid.</p>
                     <div class="list-group list-group-root well align-middle">
@@ -156,8 +160,19 @@
                             </tbody>
                             <tbody>
                                 <tr>
-                                    <th scope="row">Liquid Capacity</th>
-                                    <td>50</td>
+                                    <th scope="row">Capacity</th>
+                                    <td>
+                                    	<table>
+                                        	<tr>
+                                            	<th scope="row">Items</th>
+                                            	<td>10</td>
+                                        	</tr>
+                                        	<tr>
+                                            	<th scope="row">Liquids</th>
+                                            	<td>50</td>
+                                        	</tr>
+                                    	</table>
+                                	</td>
                                 </tr>
                             </tbody>
                             <tbody>
@@ -181,6 +196,42 @@
                                     </td>
                                 </tr>
                             </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Input/Output</th>
+                                    <td>
+                                    	<table>
+                                        	<tr>
+                                            	<th scope="row">Input</th>
+                                            	<td>None</td>
+                                        	</tr>
+                                        	<tr>
+                                            	<th scope="row">Power Use</th>
+                                            	<td>30/second</td>
+                                        	</tr>
+                                        	<tr>
+                                            	<th scope="row">Output</th>
+                                            	<td>
+                                            		<table>
+                                        				<tr>
+                                            				<th scope="row">Liquids</th>
+                                            				<td>5x Light</td>
+                                        				</tr>
+                                        				<tr>
+                                            				<th scope="row">Items</th>
+                                            				<td>None</td>
+                                        				</tr>
+                                    				</table>
+                                            	</td>
+                                        	</tr>
+                                        	<tr>
+                                            	<th scope="row">Produce Time</th>
+                                            	<td>0.17 Seconds</td>
+                                        	</tr>
+                                    	</table>
+                                	</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -198,6 +249,9 @@
                             <div class="list-group">
                                 <a href="?content=lightmender" class="list-group-item li_lightmender">Light Mender</a>
                                 <a href="?content=lightbombardier" class="list-group-item li_lightbombardier">Light Bombardier</a>
+                                <div class="list-group">
+                                	<a href="?content=eradicatorshippad" class="list-group-item li_eradicatorshippad">Eradicator Ship Pad</a>
+                                </div>
                             </div>
                         </div>
                         
@@ -212,13 +266,13 @@
                             <a href="?content=NOOMNOOM" class="list-group-item li_NOOMNOOM">NOOM NOOM</a>
                             <div class="list-group">
                                 <a href="?content=lightdriver" class="list-group-item li_lightdriver">Light Driver</a>
+                                <a href="?content=lightlauncher" class="list-group-item li_lightlauncher">Light Launcher</a>
                             </div>
                         </div>
                         
                         <a href="?content=solararray" class="list-group-item li_solararray">Solar Array</a>
                         <a href="?content=lightcore" class="list-group-item li_lightPackager">Light Core</a>
                         <a href="?content=lightdrill" class="list-group-item li_lightdrill">Light Drill</a>
-                        <a href="?content=lightlauncher" class="list-group-item li_lightlauncher">Light Launcher</a>
                     </div>
                     
                 </div>
@@ -227,7 +281,7 @@
             
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <a class="navbar-brand" href="">Mindustryalization Wiki</a>
-            <span class="nav-item">© 2019 Vortetty</span>
+            <span class="nav-item"> © 2019 Vortetty</span>
         </nav>
         
         <!-- scripts -->
@@ -257,6 +311,11 @@
             
                 console.log(shown + " " + active);
             }
+
+            function fixtables($) {
+            	$("table").find("table").addClass("table-bordered");
+            	$("table").find("table").find("table").addClass("table-bordered");
+            }
         </script>
             
         <!-- Optional JavaScript -->
@@ -271,6 +330,7 @@
                 if (window.jQuery) {
                     console.log("showing")
                     showstuff(window.jQuery);
+                    fixtables(window.jQuery);
                 } else {
                     console.log("trying again")
                     t = window.setTimeout(jquery_ready, 100);
