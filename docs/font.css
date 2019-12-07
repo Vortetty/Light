@@ -12,5 +12,9 @@
          url('font_latin_1.svg#audiowideregular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+* {
+    font-family:"mindustry";
+    font-weight:100;
 }
