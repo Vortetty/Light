@@ -1,0 +1,1957 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="bootstrap.min.css"> <!-- overwrites default bootstrap theme for a nice gunmetal theme -->
+        
+        <!-- Put stuff below here -->
+		<link rel="stylesheet" href="font.css">
+
+        <style>
+            
+            :root {
+                --circlebg: 240;
+            }
+            
+            .dropdown .dropdown-menu {
+                transition: all 0.5s ease-in-out;
+                overflow: hidden;
+                transform-origin: top center;
+                transform: scale(1, 0);
+                display: block;
+            }
+            .dropdown:hover .dropdown-menu {
+                transform: scale(1);
+            }
+            
+            /* Center align the text within the three columns below the carousel */
+
+            .row {
+            	width:100%;
+            }
+
+            .content .col-lg-4 {
+            	overflow: visible;
+                margin:auto;
+                margin-bottom: 1.5rem;
+                text-align: center;
+                max-width: 550px;
+            }
+
+            .centerme {
+            	
+            }
+
+            .content h2 {
+                font-weight: 400;
+            }
+            .content .col-lg-4 p {
+                margin-right: .75rem;
+                margin-left: .75rem;
+            }
+            
+            img {
+                image-rendering: pixelated;
+                image-rendering: -moz-crisp-edges;
+                image-rendering: crisp-edges;
+            }
+            
+            .content {
+                margin-top: calc( 40px + 2rem);
+            }
+            
+            
+            .list-group-root{
+                border-radius:0.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .round-corners {
+            	border-radius:0.5rem;
+            }
+            
+            .just-padding {
+  	            padding: 10px;
+            }
+
+            .list-group.list-group-root {
+                padding: 0;
+                overflow: hidden;
+                text-align: left;
+            }
+
+            .list-group.list-group-root .list-group {
+                margin-bottom: 0;
+            }
+
+            .list-group.list-group-root .list-group-item {
+                border-radius: 0;
+                border-width: 1px 0 0 0;
+            }
+
+            .list-group.list-group-root > .list-group-item:first-child {
+                border-top-width: 0;
+            }
+
+            .list-group.list-group-root > .list-group > .list-group-item {
+                padding-left: 30px;
+            }
+
+            .list-group.list-group-root > .list-group > .list-group > .list-group-item {
+                padding-left: 50px;
+            }
+            
+            .list-group.list-group-root > .list-group > .list-group > .list-group > .list-group-item {
+                padding-left: 70px;
+            }
+            
+            .list-group.list-group-root > .list-group > .list-group > .list-group > .list-group > .list-group-item {
+                padding-left: 90px;
+            }
+
+            .list-group.list-group-root > .list-group > .list-group > .list-group > .list-group > .list-group > .list-group-item {
+                padding-left: 110px;
+            }
+            
+            tr, th {
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- nav -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <a href="/Mindustryalization" class="navbar-brand">Mindustryalization Wiki</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Mindustryalization">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blocks.html">Blocks<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="itemsliquids.html">Items/Liquids<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mechs.html">Mechs<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="zones.html">Zones<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+            
+        <!-- main page -->
+        <div class="container content">
+            <div class="" style="width:100%;">
+                <div class="col-lg-4 lightextractor" style="display:none;">
+                    <img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/lightextractor.png" alt="Blocks.png" width="128" height="128">
+                    <h2>Light Extractor</h2>
+                    <p>Creates Light for further processing, transferred as liquid.</p>
+                    <div class="list-group list-group-root well align-middle">
+                        <table id="tablePreview" class="table table-striped table-sm">
+                            <!--Table head-->
+                            <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+    
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Health</th>
+                                    <td>60</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Build Time</th>
+                                    <td>1.52 Seconds</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Size</th>
+                                    <td>2x2</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Capacity</th>
+                                    <td>
+                                    	<table>
+                                        	<tr>
+                                            	<th scope="row">Items</th>
+                                            	<td>10</td>
+                                        	</tr>
+                                        	<tr>
+                                            	<th scope="row">Liquids</th>
+                                            	<td>50</td>
+                                        	</tr>
+                                    	</table>
+                                	</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Requires</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Lead</th>
+                                                <td>50</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Copper</th>
+                                                <td>80</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Silicon</th>
+                                                <td>20</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Input/Output</th>
+                                    <td>
+                                    	<table>
+                                        	<tr>
+                                            	<th scope="row">Input</th>
+                                            	<td>
+                                            		<table>
+                                        				<tr>
+                                            				<th scope="row">Liquids</th>
+                                            				<td>none</td>
+                                        				</tr>
+                                        				<tr>
+                                            				<th scope="row">Items</th>
+                                            				<td>None</td>
+                                        				</tr>
+                                        				<tr>
+                                                            <th scope="row">Power</th>
+                                                            <td>30/second</td>
+                                                        </tr>
+                                    				</table>
+                                            	</td>
+                                        	</tr>
+                                        	<tr>
+                                            	<th scope="row">Output</th>
+                                            	<td>
+                                            		<table>
+                                        				<tr>
+                                            				<th scope="row">Liquids</th>
+                                            				<td>5x Light</td>
+                                        				</tr>
+                                        				<tr>
+                                            				<th scope="row">Items</th>
+                                            				<td>None</td>
+                                        				</tr>
+                                    				</table>
+                                            	</td>
+                                        	</tr>
+                                        	<tr>
+                                            	<th scope="row">Produce Time</th>
+                                            	<td>0.17 Seconds</td>
+                                        	</tr>
+                                    	</table>
+                                	</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4 lightpackager" style="display:none;">
+                    <img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/lightpackager.png" alt="Blocks.png" width="128" height="128">
+                    <h2>Light Packager</h2>
+                    <p>Packages light from pipes for processing or storage in the core</p>
+                    <div class="list-group list-group-root well align-middle">
+                        <table id="tablePreview" class="table table-striped table-sm">
+                            <!--Table head-->
+                            <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+    
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Health</th>
+                                    <td>60</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Build Time</th>
+                                    <td>1 Second</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Size</th>
+                                    <td>2x2</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Capacity</th>
+                                    <td>
+                                    	<table>
+                                        	<tr>
+                                                <th scope="row">Liquids</th>
+                                                <td>100</td>
+                                            </tr>
+                                            <tr>
+                                            	<th scope="row">Items</th>
+                                            	<td>10</td>
+                                        	</tr>
+                                    	</table>
+                                	</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Requires</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Lead</th>
+                                                <td>50</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Copper</th>
+                                                <td>50</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Input/Output</th>
+                                    <td>
+                                    	<table>
+                                        	<tr>
+                                            	<th scope="row">Input</th>
+                                            	<td>
+                                                    <table>
+                                                        <tr>
+                                                            <th scope="row">Liquids</th>
+                                                            <td>50x Light</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Items</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Power</th>
+                                                            <td>30/second</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                        	</tr>
+                                        	<tr>
+                                            	<th scope="row">Output</th>
+                                            	<td>
+                                            		<table>
+                                        				<tr>
+                                            				<th scope="row">Liquids</th>
+                                            				<td>None</td>
+                                        				</tr>
+                                        				<tr>
+                                            				<th scope="row">Items</th>
+                                            				<td>2x Light Cubes</td>
+                                        				</tr>
+                                    				</table>
+                                            	</td>
+                                        	</tr>
+                                        	<tr>
+                                            	<th scope="row">Produce Time</th>
+                                            	<td>0.83 Seconds</td>
+                                        	</tr>
+                                    	</table>
+                                	</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                                <div class="col-lg-4 lightwallsm" style="display:none;">
+                    <img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/lightwallsm.png" alt="Blocks.png" width="128" height="128">
+                    <h2>Small Light Wall</h2>
+                    <p>A small wall made of light. Cheap and strong.</p>
+                    <div class="list-group list-group-root well align-middle">
+                        <table id="tablePreview" class="table table-striped table-sm">
+                            <!--Table head-->
+                            <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+    
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Health</th>
+                                    <td>1000</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Build Time</th>
+                                    <td>1.67 Seconds</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Size</th>
+                                    <td>1x1</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Requires</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Light Cubes</th>
+                                                <td>20</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                                <div class="col-lg-4 lightwall" style="display:none;">
+                    <img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/lightwall.png" alt="Blocks.png" width="128" height="128">
+                    <h2>Light Wall</h2>
+                    <p>A small wall made of light. Cheap and strong. Uses the cubes more efficiently.</p>
+                    <div class="list-group list-group-root well align-middle">
+                        <table id="tablePreview" class="table table-striped table-sm">
+                            <!--Table head-->
+                            <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+    
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Health</th>
+                                    <td>4000</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Build Time</th>
+                                    <td>1.67 Seconds</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Size</th>
+                                    <td>2x2</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Requires</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Light Cubes</th>
+                                                <td>20</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                                <div class="col-lg-4 lightmender" style="display:none;">
+                    <img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/lightmender.png" alt="Blocks.png" width="128" height="128">
+                    <h2>Light Mender</h2>
+                    <p>Uses concentrated light to melt things back together, effectively repairing them.</p>
+                    <div class="list-group list-group-root well align-middle">
+                        <table id="tablePreview" class="table table-striped table-sm">
+                            <!--Table head-->
+                            <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+    
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Health</th>
+                                    <td>1000</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Build Time</th>
+                                    <td>1.25 Seconds</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Size</th>
+                                    <td>1x1</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Capacity</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Liquids</th>
+                                                <td>None</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Items</th>
+                                                <td>10</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Requires</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Lead</th>
+                                                <td>25</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Copper</th>
+                                                <td>25</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Light Cubes</th>
+                                                <td>25</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Silicon</th>
+                                                <td>25</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Input/Output</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Input</th>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <th scope="row">Liquids</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Items</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Power</th>
+                                                            <td>30/second</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Output</th>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <th scope="row">Liquids</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Items</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        	</tbody>
+                        		<tr>
+                                    <th scope="row">Full Block Repair Time</th>
+                                    <td>4 Seconds</td>
+                                </tr>
+                        	</tbody>
+                        	</tbody>
+                        		<tr>
+                                    <th scope="row">Range</th>
+                                    <td>18.75 blocks</td>
+                                </tr>
+                        	</tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4 lightbombardier" style="display:none;">
+                    <img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/turrets/lightturret.png" alt="Blocks.png" width="128" height="128">
+                    <h2>Light Bombardier</h2>
+                    <p>Packages light from pipes for processing or storage in the core</p>
+                    <div class="list-group list-group-root well align-middle">
+                        <table id="tablePreview" class="table table-striped table-sm">
+                            <!--Table head-->
+                            <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+    
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th>Health</th>
+                                    <td>2000</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Build Time</th>
+                                    <td>1.25 Seconds</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Size</th>
+                                    <td>1x1</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Capacity</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Liquids</th>
+                                                <td>20</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Items</th>
+                                                <td>None</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Ammo</th>
+                                                <td>Unknown</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Requires</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Light Cubes</th>
+                                                <td>40</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Copper</th>
+                                                <td>70</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Ammunition</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Types</th>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <th scope="row">Light Cubes</th>
+                                                            <td>
+                                                                <table>
+                                                                    <tr>
+                                                                        <th scope="row">Damage</th>
+                                                                        <td>25 hp</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">Ammo Multiplier</th>
+                                                                        <td>10x</td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Shooting</th>
+                                    <td>
+                                        <table>
+                                        <tr>
+                                            <th scope="row">Range</th>
+                                            <td>15.63 Blocks</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Inaccuracy</th>
+                                            <td>0° (It is a perfect shot)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Shots</th>
+                                            <td>2 for every 1 ammunition</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Shots/Second</th>
+                                            <td>92233720368547758.07 (Tested on multiple devices, little to no framerate drop experienced)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Targets</th>   
+                                            <td> 
+                                            	<table>
+                                                	<tr>
+                                                    	<th scope="row">Air</th>
+                                                    	<td>Yes</td>
+                                                	</tr>
+                                                	<tr>
+                                                    	<th scope="row">Ground</th>
+                                                    	<td>Yes</td>
+                                                	</tr>
+                                            	</table>
+                                        	</td>
+                                        </tr>
+                                    </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                                <div class="col-lg-4 eradicatorshippad" style="display:none;">
+                    <img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/eradicator-ship-pad.png" alt="Blocks.png" width="128" height="128">
+                    <h2>Eradicator Fighter Ship Pad</h2>
+                    <p>Packages light from pipes for processing or storage in the core</p>
+                    <div class="list-group list-group-root well align-middle">
+                        <table id="tablePreview" class="table table-striped table-sm">
+                            <!--Table head-->
+                            <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+    
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th>Health</th>
+                                    <td>360</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Build Time</th>
+                                    <td>0.02 Seconds</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Size</th>
+                                    <td>1x1</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Requires</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Light Cubes</th>
+                                                <td>1</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Input/Output</th>
+                                    <td>
+                                    	<table>
+                                        	<tr>
+                                            	<th scope="row">Input</th>
+                                            	<td>
+                                                    <table>
+                                                        <tr>
+                                                            <th scope="row">Liquids</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Items</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Power</th>
+                                                            <td>300/second</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                        	</tr>
+                                        	<tr>
+                                            	<th scope="row">Output</th>
+                                            	<td>
+                                            		<table>
+                                        				<tr>
+                                            				<th scope="row">Liquids</th>
+                                            				<td>None</td>
+                                        				</tr>
+                                        				<tr>
+                                            				<th scope="row">Items</th>
+                                            				<td>None</td>
+                                        				</tr>
+                                    				</table>
+                                            	</td>
+                                        	</tr>
+                                        	<tr>
+                                            	<th scope="row">Ship Swap Time</th>
+                                            	<td>5 Seconds</td>
+                                        	</tr>
+                                    	</table>
+                                	</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4 sandextractor" style="display:none;">
+                    <img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/sandextractor.png" alt="Blocks.png" width="128" height="128">
+                    <h2>Sand Extractor</h2>
+                    <p>Packages light from pipes for processing or storage in the core</p>
+                    <div class="list-group list-group-root well align-middle">
+                        <table id="tablePreview" class="table table-striped table-sm">
+                            <!--Table head-->
+                            <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+    
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Health</th>
+                                    <td>60</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Build Time</th>
+                                    <td>1.6 Seconds</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Size</th>
+                                    <td>2x2</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Capacity</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Liquids</th>
+                                                <td>50</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Items</th>
+                                                <td>10</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Requires</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Lead</th>
+                                                <td>80</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Copper</th>
+                                                <td>80</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Input/Output</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Input</th>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <th scope="row">Liquids</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Items</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Power</th>
+                                                            <td>30/Second</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Output</th>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <th scope="row">Liquids</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Items</th>
+                                                            <td>1x Sand</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Produce Time</th>
+                                                <td>0.5 Seconds</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4 siliconfilter" style="display:none;">
+                    <img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/siliconfilter.png" alt="Blocks.png" width="128" height="128">
+                    <h2>Silicon Filter</h2>
+                    <p>Packages light from pipes for processing or storage in the core</p>
+                    <div class="list-group list-group-root well align-middle">
+                        <table id="tablePreview" class="table table-striped table-sm">
+                            <!--Table head-->
+                            <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+    
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Health</th>
+                                    <td>60</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Build Time</th>
+                                    <td>1.6 Seconds</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Size</th>
+                                    <td>2x2</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Capacity</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Liquids</th>
+                                                <td>50</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Items</th>
+                                                <td>10</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Requires</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Lead</th>
+                                                <td>80</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Copper</th>
+                                                <td>80</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Input/Output</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Input</th>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <th scope="row">Liquids</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Items</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Power</th>
+                                                            <td>30/Second</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Output</th>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <th scope="row">Liquids</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Items</th>
+                                                            <td>1x Silicon</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Produce Time</th>
+                                                <td>0.5 Seconds</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4 phasereweaver" style="display:none;">
+                    <img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/phasereweaver.png" alt="Blocks.png" width="128" height="128">
+                    <h2>Phase Re-Weaver</h2>
+                    <p>Packages light from pipes for processing or storage in the core</p>
+                    <div class="list-group list-group-root well align-middle">
+                        <table id="tablePreview" class="table table-striped table-sm">
+                            <!--Table head-->
+                            <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+    
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Health</th>
+                                    <td>60</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Build Time</th>
+                                    <td>1.6 Seconds</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Size</th>
+                                    <td>2x2</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Capacity</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Liquids</th>
+                                                <td>50</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Items</th>
+                                                <td>10</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Requires</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Lead</th>
+                                                <td>80</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Copper</th>
+                                                <td>80</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Input/Output</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Input</th>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <th scope="row">Liquids</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Items</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Power</th>
+                                                            <td>30/Second</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Output</th>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <th scope="row">Liquids</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Items</th>
+                                                            <td>1x Phase Fabric</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Produce Time</th>
+                                                <td>0.5 Seconds</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4 lightconveyor" style="display:none;">
+                    <img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/conveyors/light-conveyor.png" alt="Blocks.png" width="128" height="128">
+                    <h2>Light Conveyor</h2>
+                    <p>Packages light from pipes for processing or storage in the core</p>
+                    <div class="list-group list-group-root well align-middle">
+                        <table id="tablePreview" class="table table-striped table-sm">
+                            <!--Table head-->
+                            <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+    
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Health</th>
+                                    <td>40</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Build Time</th>
+                                    <td>0.14 Seconds</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Size</th>
+                                    <td>1x1</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Capacity</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Liquids</th>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Items</th>
+                                                <td>4</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Requires</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Lead</th>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Copper</th>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Light Cubes</th>
+                                                <td>5</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Speed</th>
+                                    <td>112.5 Items/Second</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4 NOOMNOOM" style="display:none;">
+                    <img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/conveyors/faster/light-conveyorf.png" alt="Blocks.png" width="128" height="128">
+                    <h2>NOOM NOOM</h2>
+                    <p>Packages light from pipes for processing or storage in the core</p>
+                    <div class="list-group list-group-root well align-middle">
+                        <table id="tablePreview" class="table table-striped table-sm">
+                            <!--Table head-->
+                            <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+    
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Health</th>
+                                    <td>40</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Build Time</th>
+                                    <td>0.23 Seconds</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Size</th>
+                                    <td>1x1</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Capacity</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Liquids</th>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Items</th>
+                                                <td>4</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Requires</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Lead</th>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Copper</th>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Light Cubes</th>
+                                                <td>10</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Speed</th>
+                                    <td>1500 Items/Second</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4 lightdriver" style="display:none;">
+                    <img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/conveyors/lightdriver-base.png" alt="Blocks.png" width="128" height="128" style="position: absolute;">
+                    <img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/conveyors/lightdriver-bordered.png" alt="Blocks.png" width="128" height="128" style="z-index: 1000; position: relative;">
+                    <h2>Light Driver</h2>
+                    <p>Packages light from pipes for processing or storage in the core</p>
+                    <div class="list-group list-group-root well align-middle">
+                        <table id="tablePreview" class="table table-striped table-sm">
+                            <!--Table head-->
+                            <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+    
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Health</th>
+                                    <td>2000</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Build Time</th>
+                                    <td>1.17 Seconds</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Size</th>
+                                    <td>1x1</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Capacity</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Liquids</th>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Items</th>
+                                                <td>1000</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Requires</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Light Cubes</th>
+                                                <td>50</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Graphite</th>
+                                                <td>20</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Power</th>
+                                    <td>6/Second</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Reload Speed</th>
+                                    <td>0 Seconds</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4 lightlauncher" style="display:none;">
+                    <img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/lightlauncher.png" alt="Blocks.png" width="128" height="128">
+                    <h2>Light Launcher</h2>
+                    <p>Packages light from pipes for processing or storage in the core</p>
+                    <div class="list-group list-group-root well align-middle">
+                        <table id="tablePreview" class="table table-striped table-sm">
+                            <!--Table head-->
+                            <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+    
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Health</th>
+                                    <td>100000</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Build Time</th>
+                                    <td>1.67 Seconds</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Size</th>
+                                    <td>2x2</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Capacity</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Liquids</th>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Items</th>
+                                                <td>10, Does not matter, launches items infinite times a second.</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Requires</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Light Cubes</th>
+                                                <td>100</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Power</th>
+                                    <td>30/Second</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Reload Time</th>
+                                    <td>0 Seconds</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4 solararray" style="display:none;">
+                    <img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/solararray.png" alt="Blocks.png" width="128" height="128">
+                    <h2>Solar Array</h2>
+                    <p>Packages light from pipes for processing or storage in the core</p>
+                    <div class="list-group list-group-root well align-middle">
+                        <table id="tablePreview" class="table table-striped table-sm">
+                            <!--Table head-->
+                            <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+    
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Health</th>
+                                    <td>160</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Build Time</th>
+                                    <td>1.25 Seconds</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Size</th>
+                                    <td>2x2</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Capacity</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Liquids</th>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Items</th>
+                                                <td>10</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Requires</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Lead</th>
+                                                <td>50</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Copper</th>
+                                                <td>80</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Input/Output</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Input</th>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <th scope="row">Liquids</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Items</th>
+                                                            <td>1x Light Cubes</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Power</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Output</th>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <th scope="row">Liquids</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Items</th>
+                                                            <td>2x Light Cubes</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Power</th>
+                                                            <td>600/Second</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Produce Time</th>
+                                                <td>1 Second</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4 lightcore" style="display:none;">
+                    <img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/lightcore.png" alt="Blocks.png" width="128" height="128">
+                    <h2>Light Core</h2>
+                    <p>Packages light from pipes for processing or storage in the core</p>
+                    <div class="list-group list-group-root well align-middle">
+                        <table id="tablePreview" class="table table-striped table-sm">
+                            <!--Table head-->
+                            <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+    
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Health</th>
+                                    <td>20000</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Build Time</th>
+                                    <td>1.67 Seconds</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Size</th>
+                                    <td>1x1</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Capacity</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Liquids</th>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Items</th>
+                                                <td>1000000</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Requires</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Light Cubes</th>
+                                                <td>100</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4 lightdrill" style="display:none;">
+                    	<img class="round-corners" src="https://raw.githubusercontent.com/Vortetty/Mindustryalization/master/sprites/blocks/drills/lightdrillfull.png" alt="Blocks.png" width="128" height="128" style="position: relative; left:0px;">
+                    <h2>Light Drill</h2>
+                    <p>Packages light from pipes for processing or storage in the core</p>
+                    <div class="list-group list-group-root well align-middle">
+                        <table id="tablePreview" class="table table-striped table-sm">
+                            <!--Table head-->
+                            <thead>
+                                <tr>
+                                    <th>Attribute</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+    
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Health</th>
+                                    <td>160</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Build Time</th>
+                                    <td>2.2 Seconds</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Size</th>
+                                    <td>2x2</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Capacity</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Liquids</th>
+                                                <td>5</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Items</th>
+                                                <td>10</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Requires</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Light Cubes</th>
+                                                <td>80</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Silicon</th>
+                                                <td>40</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Graphite</th>
+                                                <td>20</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Input/Output</th>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <th scope="row">Input</th>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <th scope="row">Liquids</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Items</th>
+                                                            <td>1x Light Cubes</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Power</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Output</th>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <th scope="row">Liquids</th>
+                                                            <td>None</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Items</th>
+                                                            <td>20 <sup>5</sup>/<sub>6</sub> Items/Second</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Power</th>
+                                                            <td>6/Second</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Drillables</th>
+                                                <td>Everything with a drill level under 5000</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <div class="list-group list-group-root well">
+  
+                <a href="?content=lightextractor" class="list-group-item li_lightextractor">Light Extractor</a>
+                <div class="list-group">
+    
+                    <a href="?content=lightpackager" class="list-group-item li_lightPackager">Light Packager</a>
+                    <div class="list-group">
+                        <a href="?content=lightwallsm" class="list-group-item li_lighwallsm">Small Light Wall</a>
+                        <div class="list-group">
+                            <a href="?content=lightwall" class="list-group-item li_lightwall">Light Wall</a>
+                            <div class="list-group">
+                                <a href="?content=lightmender" class="list-group-item li_lightmender">Light Mender</a>
+                                <a href="?content=lightbombardier" class="list-group-item li_lightbombardier">Light Bombardier</a>
+                                <div class="list-group">
+                                	<a href="?content=eradicatorshippad" class="list-group-item li_eradicatorshippad">Eradicator Fighter Ship Pad</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="?content=sandextractor" class="list-group-item li_sandextractor">Sand Extractor</a>
+                        <div class="list-group">
+                            <a href="?content=siliconfilter" class="list-group-item li_siliconfilter">Silicon Filter</a>
+                            <a href="?content=phasereweaver" class="list-group-item li_phasereweaver">Phase Re-Weaver</a>
+                        </div>
+                        
+                        <a href="?content=lightconveyor" class="list-group-item li_lightconveyor">Light Conveyor</a>
+                        <div class="list-group">
+                            <a href="?content=NOOMNOOM" class="list-group-item li_NOOMNOOM">NOOM NOOM</a>
+                            <div class="list-group">
+                                <a href="?content=lightdriver" class="list-group-item li_lightdriver">Light Driver</a>
+                                <a href="?content=lightlauncher" class="list-group-item li_lightlauncher">Light Launcher</a>
+                            </div>
+                        </div>
+                        
+                        <a href="?content=solararray" class="list-group-item li_solararray">Solar Array</a>
+                        <a href="?content=lightcore" class="list-group-item li_lightcore">Light Core</a>
+                        <a href="?content=lightdrill" class="list-group-item li_lightdrill">Light Drill</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>     
+            
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="">Mindustryalization Wiki</a>
+            <span class="nav-item"> © 2019 Vortetty</span>
+        </nav>
+        
+        <!-- scripts -->
+        <script>
+            // Get query parameter
+            // Source: https://css-tricks.com/snippets/javascript/get-url-variables/
+            function showstuff($) {
+                function getQueryParameter(variable) {
+                    var query = window.location.search.substring(1);
+                    var vars = query.split("&");
+                    for (var i = 0; i < vars.length; i++) {
+                        var pair = vars[i].split("=");
+                        if (pair[0] == variable) {
+                            return pair[1];
+                        }
+                    }
+                    return (false);
+                }
+
+                // Capture the `content` query parameter from the URL.
+                var content = getQueryParameter('content');
+                var shown = "."+content;
+                var active = ".li_"+content;
+                
+                $(shown).show();
+                $(active).toggleClass("active");
+            
+                console.log(shown + " " + active);
+            }
+
+            function fixtables($) {
+            	$("table").find("table").addClass("table-bordered");
+            	$("table").find("table").find("table").addClass("table-bordered");
+            }
+        </script>
+            
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script>
+            //make it so i can put scripts before jquery, then run them
+            var t = null;
+            function jquery_ready() {
+                if (window.jQuery) {
+                    console.log("showing")
+                    showstuff(window.jQuery);
+                    fixtables(window.jQuery);
+                } else {
+                    console.log("trying again")
+                    t = window.setTimeout(jquery_ready, 100);
+                }
+            }
+            jquery_ready();
+        </script>
+    </body>
+</html>
