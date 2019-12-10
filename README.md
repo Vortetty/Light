@@ -1,5 +1,8 @@
-# Mindustryalization
-A mod about making everything for speed and efficiency
+# Light
+A mod about making everything for speed and efficiency with light.
+
+# Dark
+Another mod i am working on, not released yet, link will be here though.
 
 ## Wiki
 
