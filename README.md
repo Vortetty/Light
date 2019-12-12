@@ -7,7 +7,7 @@ Another mod i am working on, not released yet, link will be here though.
 ## Wiki
 
 Currently a WIP.
-[link](https://vortetty.github.io/Mindustryaliztion/)
+[link](https://vortetty.github.io/Wikis/Light)
 
 ## To Do
 
