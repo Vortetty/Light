@@ -2,7 +2,7 @@
 A mod for mindustry, based around using Light. In contrast to Dark based around durability, Light is weaker, but faster.
 
 ## Wiki
-Will be avalible at vortetty.github.io/Wikis/Light/
+Will be avalible at https://vortetty.github.io/Wikis/Light/
 
 ## Dark
 A mod to compliment this one, check it out at https://github.com/Vortetty/Dark
