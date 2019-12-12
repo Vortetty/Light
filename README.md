@@ -1,13 +1,11 @@
 # Light
-A mod about making everything for speed and efficiency with light.
-
-# Dark
-Another mod i am working on, not released yet, link will be here though.
+A mod for mindustry, based around using Light. In contrast to Dark based around durability, Light is weaker, but faster.
 
 ## Wiki
+Will be avalible at vortetty.github.io/Wikis/Light/
 
-Currently a WIP.
-[link](https://vortetty.github.io/Wikis/Light)
+## Dark
+A mod to compliment this one, check it out at https://github.com/Vortetty/Dark
 
 ## To Do
 
@@ -21,8 +19,8 @@ Currently a WIP.
 </details>
 
 ## Suggestions?
-Please use the [Feathub](https://feathub.com/Vortetty/Dark "Feature Requests") page for my project, i will implement some of your ideas if they can be done through mods. remember to check your ideas as if i close them there is a reason (cant do / wont fit in the mod / have implemented / etc), i will leave a comment saying why it was closed.
+Please use the [Feathub](https://feathub.com/Vortetty/Mindustryalization "Feature Requests") page for my project, i will implement some of your ideas if they can be done through mods. remember to check your ideas as if i close them there is a reason (cant do / wont fit in the mod / have implemented / etc), i will leave a comment saying why it was closed.
 
 current requests are below, if none are visible, there are most likely none.
-[![Feature Requests](https://feathub.com/Vortetty/Dark?format=svg)](https://feathub.com/Vortetty/Dark)
+[![Feature Requests](https://feathub.com/Vortetty/Mindustryalization?format=svg)](https://feathub.com/Vortetty/Mindustryalization)
 
