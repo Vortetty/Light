@@ -6,6 +6,6 @@ const lightProduce = newEffect(20, e => {
 const extractor = extendContent(Block, "lightextractor", {
 
     update(Tile tile) {
-        Effects.effect(siloLaunchEffect, tile);
+        Effects.effect(lightProduce, tile);
     }
 });
