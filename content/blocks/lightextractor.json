@@ -8,7 +8,6 @@
 	"hasPower": true,
 	"hasLiquids": true,
 	"craftTime": 10,
-	"updateEffect": "lightProduce",
 	"consumes": {
 		"power": 0.5
 	},
