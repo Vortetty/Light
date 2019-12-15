@@ -1,7 +1,7 @@
 {
 	"name": "Bright Cavern",
 	"description": "An open, mineral rich cavern with veins of solid light shining through.",
-	"loadout": "basicFoundation",
+	"loadout": "lightCoreSetup",
     "startingItems": [
     	{"item": "copper", "amount": 500}
     ],
