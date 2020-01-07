@@ -17,5 +17,5 @@
 		{ "item": "silicon", "amount": 20 }
 	],
 	"category": "crafting",
-	"research": "mindustry-cryofluidMixer"
+	"research": "cryofluidmixer"
 }
