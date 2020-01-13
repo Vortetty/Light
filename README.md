@@ -5,7 +5,7 @@ A mod for mindustry, based around using Light. In contrast to Dark based around 
 Avalible at [Light wiki](https://vortetty.github.io/Wikis/Light/)
 
 ## Dark
-A mod to compliment this one: [Dark](https://github.com/Vortetty/Dark)
+A mod to compliment Light: [Dark](https://github.com/Vortetty/Dark)
 
 ## To Do
 
