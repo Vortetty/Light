@@ -7,7 +7,7 @@ const lightProduce = newEffect(20, e => {
 //this is iffy, might work might not, just producing effect on block update
 const extractor = extendContent(Block, "lightextractor", {
 
-    update(Tile tile) {
+    update(tile) {
         Effects.effect(lightProduce, tile);
     }
 });
