@@ -26,7 +26,7 @@ const extractor = extendContent(Block, "lightextractor", {
 
         if(entity.progress >= 1f){
             entity.cons.trigger();
-
+            Effects.effect(lightProduce, tile);
             if(outputItem != null){
                 useContent(tile, outputItem.item);
                 for(int i = 0; i < outputItem.amount; i++){
