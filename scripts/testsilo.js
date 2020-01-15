@@ -14,8 +14,6 @@ const silo = extendContent(Block, "testsilo", {
         })).size(50).disabled(boolf(b => tile.entity != null && !tile.entity.cons.valid()))
     },
 
-    stats.add(BlockStat.buildTime, 5, StatUnit.seconds);
-
     //override configure event
     configured(tile, value){
         //make sure this silo has the items it needs to fire
