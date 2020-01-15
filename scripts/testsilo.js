@@ -1,6 +1,9 @@
 const LaunchEffect = newEffect(20, e => {
-    Draw.color(Color.sky,0.5); //color goes from white to a transparent blue
-    Lines.lineAngleCenter(e.x, e.y, e.fin() * 360, e.fin() * 100); //draw a bunch of lines
+    Draw.color(Color.white,color.sky,e.fin()); //color goes from white to a transparent blue
+    Lines.lineAngle(e.x+25, e.y+25, e.fin() * 360, e.fin() * 100); //draw a bunch of lines
+    Lines.lineAngle(e.x-25, e.y+25, e.fin() * 360, e.fin() * 100); //draw a bunch of lines
+    Lines.lineAngle(e.x+25, e.y-25, e.fin() * 360, e.fin() * 100); //draw a bunch of lines
+    Lines.lineAngle(e.x-25, e.y-25, e.fin() * 360, e.fin() * 100); //draw a bunch of lines
 });
 
 const silo = extendContent(Block, "testsilo", {
