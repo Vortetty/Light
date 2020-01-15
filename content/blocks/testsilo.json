@@ -1,16 +1,15 @@
   
 {
-  "size": 2,
+  "size": 1,
   "update": true,
   "solid": true,
   "hasItems": true,
   "configurable": true,
-  "localizedName": "Scatter Silo",
-  "description": "A player-activatable block that scatters bullets everywhere upon use.",
+  "localizedName": "Test Silo",
+  "description": "A player-activatable block that is too op everywhere upon use. [#ff0000]YOUR FPS WILL SUFFER",
   "category": "turret",
   "requirements": [
     {"item":"graphite", "amount": 75}
   ],
-  "consumes": {
-  }
+  "research": "eradicator-ship-pad"
 }
