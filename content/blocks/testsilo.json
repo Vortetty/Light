@@ -11,7 +11,7 @@
   "destructible": false,
   "health": 100000,
   "requirements": [
-    {"item":"lightcube", "amount": 10000}
+    {"item":"lightcube", "amount": 60}
   ],
   "research": "eradicator-ship-pad"
 }
