@@ -22,11 +22,9 @@ const silo = extendContent(Block, "testsilo", {
             Effects.effect(LaunchEffect, tile)
 
             //create 10 bullets at this tile's location with random rotation and velocity/lifetime
-            for(var i = 0; i < 11; i++){
-                for(var i = 0; i < 15; i++){
+                for(var i = 0; i < 150; i++){
                     Calls.createBullet(Bullets.meltdownLaser, tile.getTeam(), tile.drawx(), tile.drawy(), Mathf.random(360), Mathf.random(0.5, 100.0), Mathf.random(0.2, 100.0))
                 }
-            }
             //triggering consumption makes it use up the items it requires
             tile.entity.cons.trigger()
         }
