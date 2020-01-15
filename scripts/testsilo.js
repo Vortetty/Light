@@ -1,6 +1,6 @@
 const LaunchEffect = newEffect(20, e => {
-    Draw.color(Color.white, Color.sky, e.fin()); //color goes from white to a transparent blue
-    Lines.swirl(0, 0, e.fin() * 100, 10, e.fin() * 360);
+    Draw.color(Color.sky,0.5); //color goes from white to a transparent blue
+    Lines.lineAngleCenter(e.x, e.y, e.fin() * 360, e.fin() * 100); //draw a bunch of lines
 });
 
 const silo = extendContent(Block, "testsilo", {
