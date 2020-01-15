@@ -1,5 +1,5 @@
 const LaunchEffect = newEffect(20, e => {
-    Draw.color(0x00ffffff,0x00000000,e.fin()); //color goes from ??? to ???
+    Draw.color(0x00ffff,0x000000,e.fin()); //color goes from ??? to ???
     for(var i = 0; i < 360; i+=4){
         Lines.lineAngle(e.x, e.y, i, e.fin() * 1000); //draw a bunch of lines
     };
