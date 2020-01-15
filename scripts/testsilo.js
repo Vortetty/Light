@@ -1,10 +1,7 @@
 const LaunchEffect = newEffect(20, e => {
     Draw.color(0x00ffffff,0x00000000,e.fin()); //color goes from ??? to ???
     for(var i = 0; i < 90; i+=4){
-        Lines.lineAngle(e.x+25, e.y+25, i, e.fin() * 100); //draw a bunch of lines
-        Lines.lineAngle(e.x-25, e.y+25, i, e.fin() * 100); //draw a bunch of lines
-        Lines.lineAngle(e.x+25, e.y-25, i, e.fin() * 100); //draw a bunch of lines
-        Lines.lineAngle(e.x-25, e.y-25, i, e.fin() * 100); //draw a bunch of lines
+        Lines.lineAngle(e.x, e.y, i, e.fin() * 100); //draw a bunch of lines
     };
 });
 
