@@ -8,6 +8,7 @@
   "localizedName": "Test Silo",
   "description": "A player-activatable block that is too op everywhere upon use. [#ff0000]YOUR FPS WILL SUFFER",
   "category": "turret",
+  "destructible": false,
   "requirements": [
     {"item":"lightcube", "amount": 10000}
   ],
