@@ -9,7 +9,7 @@
   "description": "A player-activatable block that is too op everywhere upon use. [#ff0000]YOUR FPS WILL SUFFER",
   "category": "turret",
   "requirements": [
-    {"item":"graphite", "amount": 75}
+    {"item":"light", "amount": 1000}
   ],
   "research": "eradicator-ship-pad"
 }
