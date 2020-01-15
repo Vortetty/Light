@@ -1,5 +1,5 @@
 const LaunchEffect = newEffect(20, e => {
-    Draw.color(Color.white,color.sky,e.fin()); //color goes from white to a transparent blue
+    Draw.color(Color.white,Color.sky,e.fin()); //color goes from white to a transparent blue
     Lines.lineAngle(e.x+25, e.y+25, e.fin() * 360 * 2, e.fin() * 100); //draw a bunch of lines
     Lines.lineAngle(e.x-25, e.y+25, e.fin() * 360 * 2, e.fin() * 100); //draw a bunch of lines
     Lines.lineAngle(e.x+25, e.y-25, e.fin() * 360 * 2, e.fin() * 100); //draw a bunch of lines
