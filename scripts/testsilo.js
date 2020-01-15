@@ -1,5 +1,5 @@
 const LaunchEffect = newEffect(20, e => {
-    Draw.color(Color.white, Color.Color(00ffff99), e.fin()); //color goes from white to a transparent blue
+    Draw.color(Color.white, Color.Color(0x00ffff99), e.fin()); //color goes from white to a transparent blue
     Lines.swirl(0, 0, e.fin() * 100, 10, e.fin() * 360);
 });
 
