@@ -1,7 +1,5 @@
-var transpblue = new Color(1, 1, 1, 1);
-
 const LaunchEffect = newEffect(20, e => {
-    Draw.color(Color.white,transpblue,e.fin()); //color goes from ??? to ???
+    Draw.color(Color.white,Color.sky,e.fin()); //color goes from ??? to ???
     for(var i = 0; i < 360; i+=2){
         Lines.lineAngle(e.x, e.y, i, e.fin() * 1000); //draw a bunch of lines
     };
