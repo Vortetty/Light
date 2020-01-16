@@ -1,4 +1,4 @@
-Var Color transpblue = new Color(1, 1, 1, 1);
+transpblue = new Color(1, 1, 1, 1);
 
 const LaunchEffect = newEffect(20, e => {
     Draw.color(Color.white,transpblue,e.fin()); //color goes from ??? to ???
