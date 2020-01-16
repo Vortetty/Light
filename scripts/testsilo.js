@@ -1,6 +1,6 @@
 const LaunchEffect = newEffect(20, e => {
     Draw.color(new Color(0xffffffff),new Color(0x00ffff00),e.fin()); //color goes from ??? to ???
-    for(var i = 0; i < 360; i+=4){
+    for(var i = 0; i < 360; i+=2){
         Lines.lineAngle(e.x, e.y, i, e.fin() * 1000); //draw a bunch of lines
     };
 });
@@ -22,7 +22,7 @@ const silo = extendContent(Block, "testsilo", {
             Effects.effect(LaunchEffect, tile)
 
             //create 10 bullets at this tile's location with random rotation and velocity/lifetime
-                for(var i = 0; i < 1500; i++){
+                for(var i = 0; i < 150; i++){
                     Effects.effect(Fx.shootBigSmoke2, tile)
                     Calls.createBullet(Bullets.meltdownLaser, tile.getTeam(), tile.drawx(), tile.drawy(), Mathf.random(360), Mathf.random(0.5, 100.0), Mathf.random(0.2, 100.0))
                 }
