@@ -1,7 +1,7 @@
 {
   "name": "Art Block",
   "description": "A block for doing art",
-  "type": "sorter",
+  "type": "Distribution",
   "health": 4000,
   "size": 1,
   "requirements": [],
