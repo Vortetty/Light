@@ -1,10 +1,10 @@
 {
   "name": "Art Block",
   "description": "A block for doing art",
-  "type": "Distribution",
+  "type": "sorter",
   "health": 4000,
   "size": 1,
   "requirements": [],
-  "category": "Effect",
+  "category": "effect",
   "research": "mechanicalDrill"
 }
