@@ -1,4 +1,4 @@
-const NewColorPicker = extendContent(FloatingDialog, "ColorPicker", {  // for now this mightnt work, need the correct thing for the first thing.
+const NewColorPicker = extend(FloatingDialog, "ColorPicker", {  // for now this mightnt work, need the correct thing for the first thing.
     show(Color color, boolean alpha, Cons<Color> consumer){
         this.current.set(color);
         this.cons = consumer;
