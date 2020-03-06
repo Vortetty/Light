@@ -1,15 +1,15 @@
 const NewColorPicker = extend(FloatingDialog, "ColorPicker", {  // for now this mightnt work, need the correct thing for the first thing.
-    show(Color color, boolean alpha, Cons<Color> consumer){
+    show(color, alpha, consumer){
         this.current.set(color);
         this.cons = consumer;
         show();
 
         cont.clear();
-        cont.pane(t -> {
-            t.table(Tex.pane, i -> {
+        cont.pane(t => {
+            t.table(Tex.pane, i => {
                 i.stack(new Image(Tex.alphaBg), new Image(){{
                     setColor(current);
-                    update(() -> setColor(current));
+                    update(() => setColor(current));
                 }}).size(200f);
             }).colspan(2).padBottom(5);
 
@@ -32,7 +32,8 @@ const NewColorPicker = extend(FloatingDialog, "ColorPicker", {  // for now this 
                 t.addSlider(0f, 1f, 0.01f, current.a, current::a).width(w);
                 t.row();
             }
-        });
+        })
+    }
 })
 
 const artblock = extendContent(Block, "artblock", {
